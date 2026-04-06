@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="This is a GitHub Random Repository Project.">
+    <title>GitHub-Random-Repository</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🚀 GitHub Repo Finder</h1>
+
+        <div class="select-wrapper">
+            <select id="languageSelect">
+                <option value="">Select a Language</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="c++">C++</option>
+            </select>
+        </div>
+
+        <button id="fetchBtn">Find Repository</button>
+
+        <p id="status"></p>
+
+        <div id="loader" class="hidden"></div>
+
+        <div id="repoCard" class="repo-card hidden">
+            <h2 id="name"></h2>
+            <p id="description"></p>
+
+            <div class="repo-stats">
+                <span>⭐ <span id="stars"></span></span>
+                <span>🍴 <span id="forks"></span></span>
+                <span>🐞 <span id="issues"></span></span>
+            </div>
+        </div>
+
+        <button id="refreshBtn" class="hidden">🔄 Refresh</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
